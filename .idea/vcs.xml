@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/Walmart-Exploratory_Data_Analysis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Sentiment_Analysis-Project" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Walmart_Sales-EDA" vcs="Git" />
   </component>
 </project>
