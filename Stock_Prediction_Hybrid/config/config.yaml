@@ -1,0 +1,37 @@
+# Stock data configuration
+symbol: "AAPL"  # Stock symbol to predict
+start_date: "2020-01-01"  # Training data start date
+end_date: "2024-03-14"   # Training data end date
+
+# Model configuration
+model:
+  input_size: 13          # Number of numerical features
+  hidden_size: 128        # Size of hidden layers
+  sequence_length: 10     # Number of time steps to use for prediction
+  dropout: 0.2           # Dropout rate
+
+# Training configuration
+training:
+  batch_size: 32         # Batch size for training
+  epochs: 100            # Number of training epochs
+  learning_rate: 0.001   # Learning rate
+  early_stopping: 10     # Number of epochs to wait before early stopping
+
+# Prediction configuration
+prediction:
+  window_size: 5         # Number of future time steps to predict
+
+# Output configuration
+output_dir: "outputs"    # Directory to save model outputs
+
+# Data processing
+preprocessing:
+  test_size: 0.2        # Fraction of data to use for testing
+  validation_size: 0.2   # Fraction of training data to use for validation
+  scale_features: true   # Whether to scale features
+  
+# Sentiment analysis
+sentiment:
+  model_name: "ProsusAI/finbert"  # Pre-trained model to use
+  max_length: 512                 # Maximum sequence length
+  batch_size: 16                  # Batch size for sentiment analysis 
