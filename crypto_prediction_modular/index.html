@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoX - Cryptocurrency Analysis Dashboard</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <!-- Initial Search Screen -->
+    <div class="welcome-screen">
+        <h1 class="logo">Crypto<span>X</span></h1>
+        <p class="welcome-text">Enter a cryptocurrency name or symbol to begin analysis</p>
+        <div class="search-container">
+            <input type="text" id="coinSearch" placeholder="Search for a cryptocurrency...">
+            <div class="suggestions"></div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard Container -->
+    <div class="container">
+        <div class="dashboard">
+            <!-- Price Chart Section -->
+            <div class="chart-section panel">
+                <div class="coin-header"></div>
+                <div class="chart-container">
+                    <canvas id="priceChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Side Panels -->
+            <div class="side-panels">
+                <div id="predictions" class="panel">
+                    <h3>AI Predictions</h3>
+                    <!-- Predictions content will be dynamically inserted -->
+                </div>
+                <div id="sentiment" class="panel">
+                    <h3>Market Sentiment</h3>
+                    <!-- Sentiment content will be dynamically inserted -->
+                </div>
+            </div>
+
+            <!-- Bottom Panels -->
+            <div class="bottom-panels">
+                <div id="technical" class="panel">
+                    <h3>Technical Analysis</h3>
+                    <!-- Technical analysis content will be dynamically inserted -->
+                </div>
+                <div id="market-stats" class="panel">
+                    <h3>Market Statistics</h3>
+                    <div class="stats-grid">
+                        <!-- Market stats will be dynamically inserted -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/app.js"></script>
+</body>
+</html> 
